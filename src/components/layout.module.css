@@ -4,11 +4,16 @@
      min-height: 100vh; 
     } 
 nav { 
-    position: relative; 
+    position: relative;
+    background-color: #25c4a4;
+    padding: 1rem; 
 } 
 .navLinkItem { 
     margin: 0 1rem; 
 } 
+/* .navName {
+    color: rgb(17, 16, 16); 
+} */
 .navLinkText { 
     color: white; 
     text-decoration: none; 
@@ -19,7 +24,7 @@ nav {
 } 
 .navLinkText:hover { 
     text-decoration: underline; 
-    background-color: #444; 
+    background-color: #157d68; 
 } 
 .hamburger { 
     flex-direction: column; 
@@ -37,9 +42,10 @@ nav {
 .navMenu { 
     display: none; 
     position: absolute; 
+    right: 0;
     top: 60px; 
-    right: 0; width: 100%; 
-    background-color: #333; 
+    width: 10%; 
+    background-color: #25c4a4; 
     flex-direction: column; 
     list-style: none; 
     padding: 0; 

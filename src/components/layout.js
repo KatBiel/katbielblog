@@ -20,7 +20,7 @@ import {
   return (
     <div className={container}>
       <nav>
-        <div className={navName}>Your Name</div>
+        <div className={navName}>CarbonKittyKat Tech World</div>
         <div className={hamburger} onClick={toggleNav}>
           <div className={hamburgerLine}></div>
           <div className={hamburgerLine}></div>
