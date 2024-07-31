@@ -65,3 +65,27 @@ nav {
         display: flex; 
     } 
 }
+.mainContent {
+    flex-grow: 1;
+  }
+.footer {
+    background-color: #25c4a4;
+    color: black;
+    text-align: left;
+    padding: 1rem 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  .footerContent {
+    padding-left: 2%;
+  }
+  
+  .footerContent a {
+    color: #157d68; 
+    text-decoration: none;
+  }
+  
+  .footerContent a:hover {
+    text-decoration: underline;
+  }

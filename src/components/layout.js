@@ -9,7 +9,10 @@ import {
   navMenu,
   navMenuOpen,
   hamburger,
-  hamburgerLine
+  hamburgerLine,
+  footer,
+  footerContent,
+  mainContent
  } from './layout.module.css'
 
  const Layout = ({ pageTitle, children }) => {
@@ -32,10 +35,17 @@ import {
           <li className={navLinkItem}><Link className={navLinkText} to="/tags">Tags</Link></li>
         </ul>
       </nav>
-      <main>
+      <main className={mainContent}>
         <h1 className={heading}>{pageTitle}</h1>
         {children}
       </main>
+      <footer className={footer}>
+        <div className={footerContent}>
+          Copyright &copy; {new Date().getFullYear()} KatBiel
+          <br />
+          Powered by <a href="https://www.gatsbyjs.com" target="_blank" rel="noopener noreferrer">Gatsby</a>.
+        </div>
+      </footer>
     </div>
   );
 };
