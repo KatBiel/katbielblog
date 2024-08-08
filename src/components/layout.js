@@ -11,8 +11,9 @@ import {
   hamburger,
   hamburgerLine,
   footer,
-  footerContent,
-  mainContent
+  mainContent,
+  footerBadge,
+  footerText
  } from './layout.module.css'
 
  const Layout = ({ pageTitle, children }) => {
@@ -40,10 +41,13 @@ import {
         {children}
       </main>
       <footer className={footer}>
-        <div className={footerContent}>
-          Copyright &copy; {new Date().getFullYear()} KatBiel
-          <br />
-          Powered by <a href="https://www.gatsbyjs.com" target="_blank" rel="noopener noreferrer">Gatsby</a>.
+          <div className={footerText}>
+            Copyright &copy; {new Date().getFullYear()} KatBiel
+            <br />
+            Powered by <a href="https://www.gatsbyjs.com" target="_blank" rel="noopener noreferrer">Gatsby</a>.
+          </div>
+          <div className={footerBadge}>
+            <img src="https://tryhackme-badges.s3.amazonaws.com/CarbonKittyKat.png" alt="TryHackMe" />
         </div>
       </footer>
     </div>
