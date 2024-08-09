@@ -13,17 +13,18 @@ import {
   footer,
   mainContent,
   footerBadge,
-  footerText
+  footerText,
+  navWithBanner
  } from './layout.module.css'
 
- const Layout = ({ pageTitle, children }) => {
+ const Layout = ({ pageTitle, children, isIndexPage }) => {
   const [isNavOpen, setIsNavOpen] = useState(false)
 
   const toggleNav = () => setIsNavOpen(!isNavOpen)
 
   return (
     <div className={container}>
-      <nav>
+      <nav className={isIndexPage ? navWithBanner : ''}>
         <div className={navName}>CarbonKittyKat Tech World</div>
         <div className={hamburger} onClick={toggleNav}>
           <div className={hamburgerLine}></div>

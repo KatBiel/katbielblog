@@ -7,7 +7,7 @@ import { StaticImage } from 'gatsby-plugin-image'
 const IndexPage = () => {
   return (
     <main>
-      < Layout pageTitle="Welcome to Kat Biel Tech World!">
+      < Layout pageTitle="Welcome to Kat Biel Tech World!" isIndexPage={true}>
         <p>Where I talk about my experience as a female career changer in a tech industry</p>
         <p>This site is currently under construction... Please, visit back again soon.</p>   
         <div className={styles.imageWrapper}>
