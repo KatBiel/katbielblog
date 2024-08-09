@@ -24,7 +24,7 @@ body {
     }
 
 nav { 
-    background-color: #78889e;
+    background-color: #324B69;
 } 
 
 .navWithBanner { 
@@ -105,8 +105,7 @@ nav {
 }
 
 .footer {
-    background-color: #78889e;
-    color: black;
+    background-color: #324B69;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -116,14 +115,18 @@ nav {
     width: 100%;
   }
   .footerText {
-    color: black;
-    font-weight: 600;
+    color: whitesmoke;
+    font-weight: 500;
   }
-  
+  .footerText a[href="https://www.gatsbyjs.com"] {
+    color: whitesmoke; 
+    text-decoration: underline; 
+}
   .footerBadge {
     display: flex;
     align-items: center;
   }
+
   
   /* .footerContent {
     display: flex;
@@ -136,10 +139,7 @@ nav {
   /* .footerText {
     flex: 1;
   }
-  .footerContent a {
-    color: #157d68; 
-    text-decoration: none;
-  }
+  
   
   .footerContent a:hover {
     text-decoration: underline;
